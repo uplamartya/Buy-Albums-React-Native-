@@ -1,3 +1,4 @@
+//Imports
 import React from "react";
 import { Text, View, ToastAndroid, Image, Linking } from "react-native";
 import Card from "./Card";
@@ -8,6 +9,7 @@ const AlbumDetails = props => {
   console.log(props.data.title);
 
   return (
+    //Rendering a Single Card[with Data] For Each Albums
     <Card>
       <CardSection>
         <View style={Styles.thumbnailContainerStyle}>
@@ -60,5 +62,5 @@ const Styles = {
     width: null
   }
 };
-
+//Export Class
 export default AlbumDetails;
